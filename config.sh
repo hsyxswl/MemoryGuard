@@ -1,0 +1,3 @@
+export ALERT_EMAIL=''
+export TARGET_DEVICE_MAC='XX:XX:XX:XX:XX:XX'
+export RSSI_THRESHOLD='-70'
