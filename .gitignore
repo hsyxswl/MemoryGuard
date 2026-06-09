@@ -2,3 +2,7 @@
 *.log
 logs/
 backups/
+.git-backup/
+scan
+web_demo.html
+git-log-*.txt
