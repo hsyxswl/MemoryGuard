@@ -50,3 +50,5 @@ while true; do
         sleep "$SCAN_INTERVAL"
     fi
 done
+
+

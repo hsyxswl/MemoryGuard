@@ -18,7 +18,9 @@ log() {
     local level="$1" message="$2" timestamp
     timestamp=$(date '+%Y-%m-%d %H:%M:%S')
     echo "[$timestamp] [$level] $message" >> "$LOG_FILE"
-    [[ "$level" == "ERROR" ]] && echo -e "${RED}[ERROR]${NC} $message" >&2
+    if [[ "$level" == "ERROR" ]]; then
+    echo -e "${RED}[ERROR]${NC} $message" >&2
+fi
 }
 
 die() { log "ERROR" "$1"; echo -e "${RED}[FATAL] $1${NC}" >&2; exit 1; }
